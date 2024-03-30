@@ -122,10 +122,10 @@ document.addEventListener('click', function (e) {
   var gerar = new GerarSenha();
   var el = e.target;
   if (el.classList.contains('btn-gerar')) {
-    if (gerar.caracter.value === '') return alert('Informe a quantidade de caracteres');
-    if (gerar.caracter.value > 20 || gerar.caracter.value < 1) return alert('Quantidade de caracteres precisa ser entre 1 e 20');
-    if (gerar.validOptions()) alert('Preencha no mínimo uma opção');
     var screen = document.querySelector('.password-screen');
+    if (gerar.caracter.value === '') return screen.innerHTML = 'Informe a quantidade de caracteres';
+    if (gerar.caracter.value > 20 || gerar.caracter.value < 1) return screen.innerHTML = 'Preencha no mínimo uma opção';
+    if (gerar.validOptions()) return screen.innerHTML = 'Preencha no mínimo uma opção';
     screen.innerHTML = '';
     var rep = gerar.caracter.value;
     for (var i = 0; i < rep; i++) {
