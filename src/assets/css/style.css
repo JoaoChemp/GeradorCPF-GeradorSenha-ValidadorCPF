@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 1500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, rgb(31, 243, 151), rgb(6, 113, 118));
+  background-color: rgba(17, 16, 16, 0.754);
+}
+
+.container {
+  width: 80vh;
+  height: 1400px;
+  padding: 50px;
+  background-color: white;
+}
+
+div {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+div h1 {
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+div h2 {
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+div button { 
+  width: 100px;
+  height: 30px;
+  margin-top: 30px;
+}
+
+div button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to right, rgb(36, 158, 36), rgb(5, 128, 5));
+  border: 1px solid black;
+}
+
+.validaCPF input {
+  width: 300px;
+  height: 20px;
+  padding: 10px;
+  font-size: 1.1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.validaCPF button {
+  width: 150px;
+  height: 50px;
+  padding: 5px;
+  border: 1px;
+  background-image: linear-gradient(to right, rgb(18, 254, 18), rgb(32, 152, 32));
+  color: rgb(26, 14, 14);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+}
+
+.geraCPF button {
+  width: 150px;
+  height: 50px;
+  padding: 5px;
+  border: 1px;
+  background-image: linear-gradient(to right, rgb(18, 254, 18), rgb(32, 152, 32));
+  color: rgb(26, 14, 14);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+
+}
+
+.geraCPF {
+  height: 300px;
+}
+
+.geraSenha {
+  height: 600px;
+}
+
+.geraSenha button {
+  width: 150px;
+  height: 50px;
+  padding: 5px;
+  border: 1px;
+  background-image: linear-gradient(to right, rgb(18, 254, 18), rgb(32, 152, 32));
+  color: rgb(26, 14, 14);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+}
+
+.geraSenha label {
+  font-size: 1.4em;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+.geraSenha input {
+  width: 20px;
+  height: 20px;
+}
+
+.geraSenha input[type="number"] {
+  width: 50px;
+  height: 30px;
+  padding: 5px;
+}
+
+p {
+  font-size: 3em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--primary-color);
+}
